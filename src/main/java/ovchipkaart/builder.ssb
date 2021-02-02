@@ -1,0 +1,20 @@
+@settings{
+    @dictonary{
+    !cb = $COMMENT.BEGIN__END=DERAILED
+    !ce = $COMMENT.END__END=DERAILED
+    !ec = __RAIL
+    }
+}
+
+@libs{
+    !cb Imports the SSBLibs:
+    JavaBuilder
+    SSB Compiler+
+    !ce
+
+    Javb.lib
+    ssbcp.lib
+}
+
+
+
