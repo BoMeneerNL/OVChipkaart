@@ -7,5 +7,5 @@ public class vartable {
     public static String effect = "NULL";
     static Scanner input = new Scanner(System.in);
     //Card number is a string because of card self creation
-    public String cardnumber = "0";
+    public static String cardnumber = "0";
 }

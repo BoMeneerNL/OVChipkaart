@@ -4,7 +4,6 @@ import static ovchipkaart.vartable.*;
 
 public class AppWrapper {
     public static void main() {
-        System.out.println("welk saldo ");
         starter();
     }
     public static void starter() {
@@ -17,16 +16,23 @@ public class AppWrapper {
                     break;
                 case "ENTERING":
                     System.out.println("Loading: " + effect);
+                    varchanger.getkaart();
                     poortjes_handler.entering();
+                    cardnumber = "0";
                     break;
                 case "EXITING":
                     System.out.println("Loading: " + effect);
+                    varchanger.getkaart();
+                    poortjes_handler.exiting();
                     break;
                 case "SALDOUP":
                     System.out.println("Loading: " + effect);
+                    varchanger.getkaart();
                     break;
                 case "SALDODOWN":
                     System.out.println("Loading: " + effect);
+                    varchanger.getkaart();
+                case "SALDOCHECK":
                 default:
                     System.out.println("Error could not resolve SYSTEM/input.act");
                     effect = "NULL";
