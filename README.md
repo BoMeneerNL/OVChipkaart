@@ -1,2 +1,0 @@
-# OVChipkaart
-A School Assignment
