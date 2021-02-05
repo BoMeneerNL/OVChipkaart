@@ -1,5 +1,4 @@
 package ovchipkaart;
-import java.util.Scanner;
 import static ovchipkaart.vartable.*;
 
 public class AppWrapper {
@@ -33,6 +32,8 @@ public class AppWrapper {
                     System.out.println("Loading: " + effect);
                     varchanger.getkaart();
                 case "SALDOCHECK":
+                    System.out.println("Saldo aan het laden...");
+                    System.out.println("je saldo is: " + saldo);
                 default:
                     System.out.println("Error could not resolve SYSTEM/input.act");
                     effect = "NULL";

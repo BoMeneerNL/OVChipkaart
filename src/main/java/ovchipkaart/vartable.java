@@ -1,5 +1,4 @@
 package ovchipkaart;
-
 import java.util.Scanner;
 
 public class vartable {

@@ -7,15 +7,39 @@
 }
 
 @libs{
-    !cb Imports the SSBLibs:
-    JavaBuilder
-    SSB Compiler+
-    !ce
     Javb.lib
-    ssbcp.lib
 }
 
-@buildworker
+@buildworker{
+    workers = 1
+    TypeWorker = Gradle
+    background = java
+    package = NULL
+    targetpackage = ovchipkaart
+    Target = JavaCLI
+    TargetPlatform = *;JAVA
+    executor = CTO
+    {
+        Compile! AppWrapper:: --Hold --oe=jcc$jcc
+        Compile! chipkaart_handler:: --Hold --oe=jcc$jcc
+        Compile! machines_handler:: --Hold --oe=jcc$jcc
+        Compile! onstart:: --Hold --oe=jcc$jcc
+        Compile! poortjes_handler:: --Hold --oe=jcc$jcc
+        Compile! varchanger:: --Hold --oe=jcc$jcc
+        Compile! vartable:: --Hold --oe=jcc$jcc
 
+        get! *.compiled.hold.jcc
+        hold! get$latest!
+        create$jarf! !!back$$hold$latest
+        Message__$"Build Done"
+    }
+}
+
+@error{
+    if error = Missing.javap{
+    Message__$"Error, (a) Package(s) are/is not found"
+    }
+
+}
 
 
