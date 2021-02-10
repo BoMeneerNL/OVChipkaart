@@ -11,6 +11,8 @@ public class AppWrapper {
             effect = input.nextLine();
             switch (effect) {
                 case "NULL":
+                case "":
+                case " ":
                     System.out.println("Error could not recieve all or any data");
                     break;
                 case "ENTERING":
@@ -38,7 +40,6 @@ public class AppWrapper {
                     System.out.println("Error could not resolve SYSTEM/input.act");
                     effect = "NULL";
             }
-
         }
     }
 }
