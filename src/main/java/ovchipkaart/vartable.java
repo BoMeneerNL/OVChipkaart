@@ -7,4 +7,6 @@ public class vartable {
     static Scanner input = new Scanner(System.in);
     //Card number is a string because of card self creation ("self")
     public static String cardnumber = "0";
+    public static int haltes = -1;
+    public static double haltekosten = 0;
 }

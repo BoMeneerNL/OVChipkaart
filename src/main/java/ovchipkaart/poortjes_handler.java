@@ -9,6 +9,6 @@ public class poortjes_handler {
         chipkaart_handler.handler_down_20();
     }
     public static void exiting(){
-
+        chipkaart_handler.routetracker();
     }
 }
