@@ -9,4 +9,5 @@ public class vartable {
     public static String cardnumber = "0";
     public static int haltes = -1;
     public static double haltekosten = 0;
+    public static double nieuwsaldo = 0;
 }

@@ -7,7 +7,7 @@ public class AppWrapper {
     }
     public static void starter() {
         while (effect.equals("NULL")) {
-            System.out.println("What action is peformed?: 'ENTERING', 'EXITING', 'SALDOUP', 'SALDODOWN', 'SALDOCHECK'");
+            System.out.println("What action is peformed?: 'ENTERING', 'EXITING', 'SALDOUP', 'SALDOCHECK'");
             effect = input.nextLine();
             switch (effect) {
                 case "NULL":
@@ -31,10 +31,6 @@ public class AppWrapper {
                     varchanger.getkaart();
                     machines_handler.saldochange_up();
                     break;
-                case "SALDODOWN":
-                    System.out.println("Loading: " + effect);
-                    varchanger.getkaart();
-                    machines_handler.saldochange_down();
                 case "SALDOCHECK":
                     System.out.println("Saldo aan het laden...");
                     System.out.println("je saldo is: " + saldo);

@@ -6,9 +6,8 @@ public class machines_handler {
 
     }
     public static void saldochange_up(){
-
-    }
-    public static void saldochange_down(){
-
+        System.out.println("Welkom bij Saldo opvoeren, hoeveel saldo gaat er op de kaart?");
+        nieuwsaldo = input.nextDouble();
+        saldo = saldo + nieuwsaldo;
     }
 }

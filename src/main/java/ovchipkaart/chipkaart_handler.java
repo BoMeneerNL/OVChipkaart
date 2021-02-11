@@ -33,7 +33,7 @@ public class chipkaart_handler {
             saldo = saldo - haltekosten;
             break;
             default:
-             System.out.println("Error, haltes to high");
+             System.out.println("Error, 'haltes' to high (max = 15)");
 
         }
     }

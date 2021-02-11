@@ -18,7 +18,15 @@ public class varchanger {
             haltes = input.nextInt();
         }
         else if (cardnumber == "35289921214821113842" || cardnumber == "35288324327821942231" ){
-
+                switch (cardnumber){
+                    case "35289921214821113842":
+                        saldo = 35.20;
+                        haltes = 2;
+                    case "35288324327821942231":
+                        saldo = -10.00;
+                        haltes = 12;
+                    case"":
+                }
             }
         }
     }
