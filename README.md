@@ -1,7 +1,7 @@
 # OVChipkaart
 A Java School Assignment
 
-<i>edit: i didnt even need to make a java project only an uml class diagram, oops</i>
+<i>edit: i didnt even needed to make a java project only an uml class diagram, oops</i>
 
 ## How it works:
 
