@@ -10,4 +10,5 @@ public class vartable {
     public static int haltes = -1;
     public static double haltekosten = 0;
     public static double nieuwsaldo = 0;
+    public static String go_on = "ja";
 }

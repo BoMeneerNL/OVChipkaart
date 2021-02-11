@@ -17,7 +17,7 @@ public class varchanger {
             System.out.println("What should the new amount 'haltes' be? (just say 0 if not using EXITING)");
             haltes = input.nextInt();
         }
-        else if (cardnumber == "35289921214821113842" || cardnumber == "35288324327821942231" ){
+        else if (cardnumber == "35289921214821113842" || cardnumber == "35288324327821942231" || cardnumber == "35283218123228112422" ){
                 switch (cardnumber){
                     case "35289921214821113842":
                         saldo = 35.20;
@@ -25,7 +25,9 @@ public class varchanger {
                     case "35288324327821942231":
                         saldo = -10.00;
                         haltes = 12;
-                    case"":
+                    case"35283218123228112422":
+                       saldo = 32.25;
+                       haltes = 8;
                 }
             }
         }
